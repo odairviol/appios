@@ -12,6 +12,9 @@
 		867F4EAD232C5366000F7C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867F4EAB232C5366000F7C4F /* Main.storyboard */; };
 		867F4EAF232C5369000F7C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867F4EAE232C5369000F7C4F /* Assets.xcassets */; };
 		867F4EB2232C5369000F7C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867F4EB0232C5369000F7C4F /* LaunchScreen.storyboard */; };
+		867F4EBA232C59A9000F7C4F /* CURSOS.png in Resources */ = {isa = PBXBuildFile; fileRef = 867F4EB9232C59A9000F7C4F /* CURSOS.png */; };
+		867F4EBE232C5A13000F7C4F /* ALUNOS.png in Resources */ = {isa = PBXBuildFile; fileRef = 867F4EBC232C5A12000F7C4F /* ALUNOS.png */; };
+		867F4EBF232C5A13000F7C4F /* if_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 867F4EBD232C5A13000F7C4F /* if_logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		867F4EAE232C5369000F7C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		867F4EB1232C5369000F7C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		867F4EB3232C5369000F7C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		867F4EB9232C59A9000F7C4F /* CURSOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CURSOS.png; sourceTree = "<group>"; };
+		867F4EBC232C5A12000F7C4F /* ALUNOS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ALUNOS.png; sourceTree = "<group>"; };
+		867F4EBD232C5A13000F7C4F /* if_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = if_logo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		867F4EA6232C5366000F7C4F /* AppIOS */ = {
 			isa = PBXGroup;
 			children = (
+				867F4EBB232C59E5000F7C4F /* imagens */,
 				867F4EA7232C5366000F7C4F /* AppDelegate.swift */,
 				867F4EA9232C5366000F7C4F /* ViewController.swift */,
 				867F4EAB232C5366000F7C4F /* Main.storyboard */,
@@ -62,6 +69,16 @@
 				867F4EB3232C5369000F7C4F /* Info.plist */,
 			);
 			path = AppIOS;
+			sourceTree = "<group>";
+		};
+		867F4EBB232C59E5000F7C4F /* imagens */ = {
+			isa = PBXGroup;
+			children = (
+				867F4EBC232C5A12000F7C4F /* ALUNOS.png */,
+				867F4EBD232C5A13000F7C4F /* if_logo.jpg */,
+				867F4EB9232C59A9000F7C4F /* CURSOS.png */,
+			);
+			path = imagens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +139,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867F4EBA232C59A9000F7C4F /* CURSOS.png in Resources */,
 				867F4EB2232C5369000F7C4F /* LaunchScreen.storyboard in Resources */,
 				867F4EAF232C5369000F7C4F /* Assets.xcassets in Resources */,
+				867F4EBF232C5A13000F7C4F /* if_logo.jpg in Resources */,
+				867F4EBE232C5A13000F7C4F /* ALUNOS.png in Resources */,
 				867F4EAD232C5366000F7C4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FMP3F6Q52C;
 				INFOPLIST_FILE = AppIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FMP3F6Q52C;
 				INFOPLIST_FILE = AppIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
