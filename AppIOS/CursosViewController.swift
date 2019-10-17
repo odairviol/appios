@@ -9,5 +9,11 @@
 import UIKit
 
 class CursosViewController : UIViewController {
+    @IBOutlet weak var nomeTextField: UITextField!
+    @IBOutlet weak var ementaTextField: UITextField!
+    @IBOutlet weak var inicioDatePicker: UIDatePicker!
+    @IBOutlet weak var fimDatePicker: UIDatePicker!
+    @IBOutlet weak var cursosTableView: UITableView!
+    
     
 }

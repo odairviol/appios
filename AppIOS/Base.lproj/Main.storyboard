@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YZi-Ud-2EZ">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YZi-Ud-2EZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,32 +18,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu usuário" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zja-rR-ox3">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu usuário" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zja-rR-ox3">
                                 <rect key="frame" x="26" y="231" width="323" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9t-wf-4UF">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9t-wf-4UF">
                                 <rect key="frame" x="26" y="295" width="323" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuário" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6My-LT-VLW">
-                                <rect key="frame" x="26" y="198" width="59" height="33"/>
+                                <rect key="frame" x="26" y="218" width="59" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEh-1m-WTV">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEh-1m-WTV">
                                 <rect key="frame" x="26" y="273" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="if_logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oBb-yM-rVb">
-                                <rect key="frame" x="93" y="73" width="189" height="133"/>
+                                <rect key="frame" x="93" y="93" width="189" height="120.5"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpP-47-M2g">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpP-47-M2g">
                                 <rect key="frame" x="26" y="350" width="323" height="30"/>
                                 <color key="backgroundColor" red="0.86845456210000005" green="0.99814194440000004" blue="0.74008127430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Logar">
@@ -86,7 +88,7 @@
             <objects>
                 <navigationController id="YZi-Ud-2EZ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bv1-8e-AFr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -142,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8o-f7-eup">
-                                <rect key="frame" x="16" y="75" width="343" height="30"/>
+                                <rect key="frame" x="16" y="95" width="343" height="30"/>
                                 <color key="backgroundColor" red="0.86845456210000005" green="0.99814194440000004" blue="0.74008127430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="ADICIONAR"/>
@@ -151,7 +153,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fSh-jS-cri">
-                                <rect key="frame" x="16" y="128" width="343" height="486"/>
+                                <rect key="frame" x="16" y="148" width="343" height="466"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -167,6 +169,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QeB-G2-tN6"/>
                     </view>
+                    <connections>
+                        <outlet property="cursosTableView" destination="fSh-jS-cri" id="zIp-eF-Qgu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dyt-Fw-rvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,7 +180,7 @@
         <!--Alunos-->
         <scene sceneID="nap-eX-ESd">
             <objects>
-                <viewController title="Alunos" id="3E0-EA-k3U" sceneMemberID="viewController">
+                <viewController title="Alunos" id="3E0-EA-k3U" customClass="AlunosViewController" customModule="AppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fvl-q6-NEg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,6 +205,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pM5-lL-9fE"/>
                     </view>
+                    <connections>
+                        <outlet property="alunosTableView" destination="Zax-Ol-6LQ" id="Zpn-Jg-fzL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yS9-ju-GTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +216,7 @@
         <!--Cadastrar Alunos-->
         <scene sceneID="PUE-q1-GHX">
             <objects>
-                <viewController title="Cadastrar Alunos" id="zPk-qg-ZNM" sceneMemberID="viewController">
+                <viewController title="Cadastrar Alunos" id="zPk-qg-ZNM" customClass="AlunosViewController" customModule="AppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TUH-wi-NQa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,10 +271,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4jg-dk-3WO"/>
                     </view>
+                    <connections>
+                        <outlet property="cursoPickerView" destination="wSb-Ts-oQV" id="72R-Xz-va2"/>
+                        <outlet property="dataNascimentoDatePicker" destination="jL8-h9-h4i" id="eV5-sZ-8Z1"/>
+                        <outlet property="fotoImageView" destination="ifj-04-wZD" id="nTf-6W-kI0"/>
+                        <outlet property="nomeTextField" destination="tdl-Ta-59M" id="e7v-xV-CAI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FiT-Vc-cB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2111" y="380"/>
+            <point key="canvasLocation" x="1988" y="421"/>
         </scene>
         <!--Cadastro Curso-->
         <scene sceneID="eqY-GZ-M0t">
@@ -335,6 +349,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vGO-9d-a53"/>
                     </view>
+                    <connections>
+                        <outlet property="ementaTextField" destination="v8t-5V-nXW" id="tlZ-ps-Rdo"/>
+                        <outlet property="fimDatePicker" destination="Yoj-fx-cVR" id="eKh-Eh-sAT"/>
+                        <outlet property="inicioDatePicker" destination="Rum-MC-GjI" id="Btl-bY-FOo"/>
+                        <outlet property="nomeTextField" destination="jVg-oH-i1F" id="JzG-D3-0Le"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYB-mR-8bd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

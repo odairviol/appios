@@ -9,5 +9,10 @@
 import UIKit
 
 class AlunosViewController : UIViewController {
+    @IBOutlet weak var nomeTextField: UITextField!
+    @IBOutlet weak var dataNascimentoDatePicker: UIDatePicker!
+    @IBOutlet weak var cursoPickerView: UIPickerView!
+    @IBOutlet weak var fotoImageView: UIImageView!
+    @IBOutlet weak var alunosTableView: UITableView!
     
 }
