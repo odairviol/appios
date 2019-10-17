@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		158B3E342357D53200E1A7E4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158B3E332357D53200E1A7E4 /* CoreData.framework */; };
+		158B3E372357D6E200E1A7E4 /* model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E352357D6E200E1A7E4 /* model.xcdatamodeld */; };
+		158B3E392357DD1200E1A7E4 /* CursosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E382357DD1200E1A7E4 /* CursosViewController.swift */; };
+		158B3E3B2357DD2500E1A7E4 /* AlunosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */; };
 		867F4EA8232C5366000F7C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867F4EA7232C5366000F7C4F /* AppDelegate.swift */; };
 		867F4EAA232C5366000F7C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867F4EA9232C5366000F7C4F /* ViewController.swift */; };
 		867F4EAD232C5366000F7C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867F4EAB232C5366000F7C4F /* Main.storyboard */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		158B3E332357D53200E1A7E4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		158B3E362357D6E200E1A7E4 /* model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
+		158B3E382357DD1200E1A7E4 /* CursosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursosViewController.swift; sourceTree = "<group>"; };
+		158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunosViewController.swift; sourceTree = "<group>"; };
 		867F4EA4232C5366000F7C4F /* AppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		867F4EA7232C5366000F7C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		867F4EA9232C5366000F7C4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,17 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158B3E342357D53200E1A7E4 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158B3E322357D53200E1A7E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				158B3E332357D53200E1A7E4 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		867F4E9B232C5366000F7C4F = {
 			isa = PBXGroup;
 			children = (
 				867F4EA6232C5366000F7C4F /* AppIOS */,
 				867F4EA5232C5366000F7C4F /* Products */,
+				158B3E322357D53200E1A7E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +85,9 @@
 				867F4EAE232C5369000F7C4F /* Assets.xcassets */,
 				867F4EB0232C5369000F7C4F /* LaunchScreen.storyboard */,
 				867F4EB3232C5369000F7C4F /* Info.plist */,
+				158B3E352357D6E200E1A7E4 /* model.xcdatamodeld */,
+				158B3E382357DD1200E1A7E4 /* CursosViewController.swift */,
+				158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */,
 			);
 			path = AppIOS;
 			sourceTree = "<group>";
@@ -156,7 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				867F4EAA232C5366000F7C4F /* ViewController.swift in Sources */,
+				158B3E3B2357DD2500E1A7E4 /* AlunosViewController.swift in Sources */,
 				867F4EA8232C5366000F7C4F /* AppDelegate.swift in Sources */,
+				158B3E372357D6E200E1A7E4 /* model.xcdatamodeld in Sources */,
+				158B3E392357DD1200E1A7E4 /* CursosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +378,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		158B3E352357D6E200E1A7E4 /* model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				158B3E362357D6E200E1A7E4 /* model.xcdatamodel */,
+			);
+			currentVersion = 158B3E362357D6E200E1A7E4 /* model.xcdatamodel */;
+			path = model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 867F4E9C232C5366000F7C4F /* Project object */;
 }
