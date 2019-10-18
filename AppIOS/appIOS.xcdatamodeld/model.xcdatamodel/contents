@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Aluno" representedClassName=".Aluno" syncable="YES">
+        <attribute name="dataNascimento" attributeType="Date" usesScalarValueType="NO">
+            <userInfo/>
+        </attribute>
+        <attribute name="foto" optional="YES" attributeType="Binary">
+            <userInfo/>
+        </attribute>
+        <attribute name="nome" attributeType="String">
+            <userInfo/>
+        </attribute>
+        <relationship name="curso" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Curso">
+            <userInfo/>
+        </relationship>
+    </entity>
+    <entity name="Curso" representedClassName=".Curso" syncable="YES">
+        <attribute name="ementa" attributeType="String">
+            <userInfo/>
+        </attribute>
+        <attribute name="fim" attributeType="Date" usesScalarValueType="NO">
+            <userInfo/>
+        </attribute>
+        <attribute name="inicio" attributeType="Date" usesScalarValueType="NO">
+            <userInfo/>
+        </attribute>
+        <attribute name="nome" attributeType="String">
+            <userInfo/>
+        </attribute>
+    </entity>
+    <elements>
+        <element name="Aluno" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Curso" positionX="-54" positionY="18" width="128" height="105"/>
+    </elements>
+</model>

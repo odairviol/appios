@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CursosViewController : UIViewController {
     @IBOutlet weak var nomeTextField: UITextField!
@@ -15,5 +16,19 @@ class CursosViewController : UIViewController {
     @IBOutlet weak var fimDatePicker: UIDatePicker!
     @IBOutlet weak var cursosTableView: UITableView!
     
+    var managedObjectContext: NSManagedObjectContext!
+    var cursos = [Curso]()
     
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        
+        title = "Cursos"
+        
+       
+    }
+    
+    @IBAction func salvar(_ sender: Any) {
+        
+        
+    }
 }

@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		158B3E342357D53200E1A7E4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158B3E332357D53200E1A7E4 /* CoreData.framework */; };
-		158B3E372357D6E200E1A7E4 /* model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E352357D6E200E1A7E4 /* model.xcdatamodeld */; };
+		158B3E372357D6E200E1A7E4 /* appIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E352357D6E200E1A7E4 /* appIOS.xcdatamodeld */; };
 		158B3E392357DD1200E1A7E4 /* CursosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E382357DD1200E1A7E4 /* CursosViewController.swift */; };
 		158B3E3B2357DD2500E1A7E4 /* AlunosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */; };
+		15AB0CB0235A354800D80EED /* Aluno+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB0CAC235A354800D80EED /* Aluno+CoreDataClass.swift */; };
+		15AB0CB1235A354800D80EED /* Aluno+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB0CAD235A354800D80EED /* Aluno+CoreDataProperties.swift */; };
+		15AB0CB2235A354800D80EED /* Curso+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB0CAE235A354800D80EED /* Curso+CoreDataClass.swift */; };
+		15AB0CB3235A354800D80EED /* Curso+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB0CAF235A354800D80EED /* Curso+CoreDataProperties.swift */; };
 		867F4EA8232C5366000F7C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867F4EA7232C5366000F7C4F /* AppDelegate.swift */; };
 		867F4EAA232C5366000F7C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867F4EA9232C5366000F7C4F /* ViewController.swift */; };
 		867F4EAD232C5366000F7C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867F4EAB232C5366000F7C4F /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 		158B3E362357D6E200E1A7E4 /* model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
 		158B3E382357DD1200E1A7E4 /* CursosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursosViewController.swift; sourceTree = "<group>"; };
 		158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunosViewController.swift; sourceTree = "<group>"; };
+		15AB0CAC235A354800D80EED /* Aluno+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Aluno+CoreDataClass.swift"; sourceTree = "<group>"; };
+		15AB0CAD235A354800D80EED /* Aluno+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Aluno+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		15AB0CAE235A354800D80EED /* Curso+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Curso+CoreDataClass.swift"; sourceTree = "<group>"; };
+		15AB0CAF235A354800D80EED /* Curso+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Curso+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		867F4EA4232C5366000F7C4F /* AppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		867F4EA7232C5366000F7C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		867F4EA9232C5366000F7C4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +86,10 @@
 		867F4EA6232C5366000F7C4F /* AppIOS */ = {
 			isa = PBXGroup;
 			children = (
+				15AB0CAC235A354800D80EED /* Aluno+CoreDataClass.swift */,
+				15AB0CAD235A354800D80EED /* Aluno+CoreDataProperties.swift */,
+				15AB0CAE235A354800D80EED /* Curso+CoreDataClass.swift */,
+				15AB0CAF235A354800D80EED /* Curso+CoreDataProperties.swift */,
 				867F4EBB232C59E5000F7C4F /* imagens */,
 				867F4EA7232C5366000F7C4F /* AppDelegate.swift */,
 				867F4EA9232C5366000F7C4F /* ViewController.swift */,
@@ -85,7 +97,7 @@
 				867F4EAE232C5369000F7C4F /* Assets.xcassets */,
 				867F4EB0232C5369000F7C4F /* LaunchScreen.storyboard */,
 				867F4EB3232C5369000F7C4F /* Info.plist */,
-				158B3E352357D6E200E1A7E4 /* model.xcdatamodeld */,
+				158B3E352357D6E200E1A7E4 /* appIOS.xcdatamodeld */,
 				158B3E382357DD1200E1A7E4 /* CursosViewController.swift */,
 				158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */,
 			);
@@ -177,10 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				867F4EAA232C5366000F7C4F /* ViewController.swift in Sources */,
+				15AB0CB1235A354800D80EED /* Aluno+CoreDataProperties.swift in Sources */,
 				158B3E3B2357DD2500E1A7E4 /* AlunosViewController.swift in Sources */,
 				867F4EA8232C5366000F7C4F /* AppDelegate.swift in Sources */,
-				158B3E372357D6E200E1A7E4 /* model.xcdatamodeld in Sources */,
+				15AB0CB2235A354800D80EED /* Curso+CoreDataClass.swift in Sources */,
+				15AB0CB3235A354800D80EED /* Curso+CoreDataProperties.swift in Sources */,
+				158B3E372357D6E200E1A7E4 /* appIOS.xcdatamodeld in Sources */,
 				158B3E392357DD1200E1A7E4 /* CursosViewController.swift in Sources */,
+				15AB0CB0235A354800D80EED /* Aluno+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,13 +396,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		158B3E352357D6E200E1A7E4 /* model.xcdatamodeld */ = {
+		158B3E352357D6E200E1A7E4 /* appIOS.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				158B3E362357D6E200E1A7E4 /* model.xcdatamodel */,
 			);
 			currentVersion = 158B3E362357D6E200E1A7E4 /* model.xcdatamodel */;
-			path = model.xcdatamodeld;
+			path = appIOS.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
