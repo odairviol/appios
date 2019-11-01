@@ -11,6 +11,7 @@
 		158B3E372357D6E200E1A7E4 /* appIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E352357D6E200E1A7E4 /* appIOS.xcdatamodeld */; };
 		158B3E392357DD1200E1A7E4 /* CursosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E382357DD1200E1A7E4 /* CursosViewController.swift */; };
 		158B3E3B2357DD2500E1A7E4 /* AlunosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */; };
+		158F8E142362346D001A84E1 /* CursoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158F8E132362346D001A84E1 /* CursoViewController.swift */; };
 		15AB0CB0235A354800D80EED /* Aluno+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB0CAC235A354800D80EED /* Aluno+CoreDataClass.swift */; };
 		15AB0CB1235A354800D80EED /* Aluno+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB0CAD235A354800D80EED /* Aluno+CoreDataProperties.swift */; };
 		15AB0CB2235A354800D80EED /* Curso+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB0CAE235A354800D80EED /* Curso+CoreDataClass.swift */; };
@@ -30,6 +31,7 @@
 		158B3E362357D6E200E1A7E4 /* model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
 		158B3E382357DD1200E1A7E4 /* CursosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursosViewController.swift; sourceTree = "<group>"; };
 		158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunosViewController.swift; sourceTree = "<group>"; };
+		158F8E132362346D001A84E1 /* CursoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursoViewController.swift; sourceTree = "<group>"; };
 		15AB0CAC235A354800D80EED /* Aluno+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Aluno+CoreDataClass.swift"; sourceTree = "<group>"; };
 		15AB0CAD235A354800D80EED /* Aluno+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Aluno+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		15AB0CAE235A354800D80EED /* Curso+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Curso+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				158B3E352357D6E200E1A7E4 /* appIOS.xcdatamodeld */,
 				158B3E382357DD1200E1A7E4 /* CursosViewController.swift */,
 				158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */,
+				158F8E132362346D001A84E1 /* CursoViewController.swift */,
 			);
 			path = AppIOS;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				867F4EAA232C5366000F7C4F /* ViewController.swift in Sources */,
+				158F8E142362346D001A84E1 /* CursoViewController.swift in Sources */,
 				15AB0CB1235A354800D80EED /* Aluno+CoreDataProperties.swift in Sources */,
 				158B3E3B2357DD2500E1A7E4 /* AlunosViewController.swift in Sources */,
 				867F4EA8232C5366000F7C4F /* AppDelegate.swift in Sources */,

@@ -115,7 +115,7 @@
                                 </accessibility>
                                 <state key="normal" title="Button" image="CURSOS.png"/>
                                 <connections>
-                                    <segue destination="g5G-AH-27G" kind="show" identifier="cursos" id="nM3-fY-LiA"/>
+                                    <segue destination="QZs-I1-9Oa" kind="show" id="Gi0-PZ-JvC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ew-ck-fWS">
@@ -134,48 +134,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2SJ-kw-41C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="717.5" y="115.5"/>
-        </scene>
-        <!--Cursos-->
-        <scene sceneID="ifx-GY-Yzm">
-            <objects>
-                <viewController title="Cursos" id="g5G-AH-27G" customClass="CursosViewController" customModule="AppIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gAI-x2-JNe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8o-f7-eup">
-                                <rect key="frame" x="16" y="95" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.86845456210000005" green="0.99814194440000004" blue="0.74008127430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="ADICIONAR"/>
-                                <connections>
-                                    <segue destination="hWt-Sb-oMb" kind="show" identifier="cadastro-cursos" id="J3h-2R-VFd"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fSh-jS-cri">
-                                <rect key="frame" x="16" y="148" width="343" height="466"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="C8o-f7-eup" firstAttribute="top" secondItem="QeB-G2-tN6" secondAttribute="top" constant="31" id="5AT-dl-Il3"/>
-                            <constraint firstItem="C8o-f7-eup" firstAttribute="leading" secondItem="gAI-x2-JNe" secondAttribute="leadingMargin" id="Ekz-BU-Arc"/>
-                            <constraint firstItem="C8o-f7-eup" firstAttribute="leading" secondItem="fSh-jS-cri" secondAttribute="leading" id="G0j-cg-f5n"/>
-                            <constraint firstItem="C8o-f7-eup" firstAttribute="trailing" secondItem="gAI-x2-JNe" secondAttribute="trailingMargin" id="NS6-zk-8rk"/>
-                            <constraint firstItem="QeB-G2-tN6" firstAttribute="bottom" secondItem="fSh-jS-cri" secondAttribute="bottom" constant="53" id="fKH-VT-bFO"/>
-                            <constraint firstItem="fSh-jS-cri" firstAttribute="top" secondItem="C8o-f7-eup" secondAttribute="bottom" constant="23" id="hkf-Sj-KwD"/>
-                            <constraint firstItem="C8o-f7-eup" firstAttribute="trailing" secondItem="fSh-jS-cri" secondAttribute="trailing" id="q1R-7y-uJo"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="QeB-G2-tN6"/>
-                    </view>
-                    <connections>
-                        <outlet property="cursosTableView" destination="fSh-jS-cri" id="zIp-eF-Qgu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dyt-Fw-rvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1319" y="-362"/>
         </scene>
         <!--Alunos-->
         <scene sceneID="nap-eX-ESd">
@@ -282,10 +240,43 @@
             </objects>
             <point key="canvasLocation" x="1988" y="421"/>
         </scene>
+        <!--Cursos View Controller-->
+        <scene sceneID="oHz-7O-0LC">
+            <objects>
+                <tableViewController id="QZs-I1-9Oa" customClass="CursosViewController" customModule="AppIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EfA-qX-6DL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celulaReuso" id="wfU-OM-EBM">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wfU-OM-EBM" id="Wta-6c-Ms6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QZs-I1-9Oa" id="DaS-gA-sz7"/>
+                            <outlet property="delegate" destination="QZs-I1-9Oa" id="wnc-97-f4Y"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cursosTableView" destination="EfA-qX-6DL" id="EWh-ye-8EL"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vSL-bd-jmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455" y="-364"/>
+        </scene>
         <!--Cadastro Curso-->
         <scene sceneID="eqY-GZ-M0t">
             <objects>
-                <viewController title="Cadastro Curso" id="hWt-Sb-oMb" customClass="CursosViewController" customModule="AppIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Cadastro Curso" id="hWt-Sb-oMb" customClass="CursoViewController" customModule="AppIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JtR-rk-MJl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -345,14 +336,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jho-of-Iw8">
-                                <rect key="frame" x="150" y="620" width="43" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Salvar"/>
-                                <connections>
-                                    <action selector="salvar:" destination="hWt-Sb-oMb" eventType="touchUpInside" id="TMr-I1-IoB"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vGO-9d-a53"/>
