@@ -240,7 +240,7 @@
             </objects>
             <point key="canvasLocation" x="1988" y="421"/>
         </scene>
-        <!--Cursos View Controller-->
+        <!--Cursos-->
         <scene sceneID="oHz-7O-0LC">
             <objects>
                 <tableViewController id="QZs-I1-9Oa" customClass="CursosViewController" customModule="AppIOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -264,6 +264,13 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Cursos" id="YDF-YD-tu1">
+                        <barButtonItem key="rightBarButtonItem" title="Novo" id="E1Q-Kh-SWn">
+                            <connections>
+                                <segue destination="hWt-Sb-oMb" kind="show" id="Rl3-l2-KNT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cursosTableView" destination="EfA-qX-6DL" id="EWh-ye-8EL"/>
@@ -340,11 +347,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vGO-9d-a53"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Curso" id="XPg-Xo-bvg">
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="TY6-Mz-boh">
+                            <connections>
+                                <action selector="salvar" destination="hWt-Sb-oMb" id="81U-ym-LTn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="ementaTextField" destination="v8t-5V-nXW" id="tlZ-ps-Rdo"/>
-                        <outlet property="fimDatePicker" destination="Yoj-fx-cVR" id="eKh-Eh-sAT"/>
-                        <outlet property="inicioDatePicker" destination="Rum-MC-GjI" id="Btl-bY-FOo"/>
-                        <outlet property="nomeTextField" destination="jVg-oH-i1F" id="JzG-D3-0Le"/>
+                        <outlet property="ementaTextField" destination="v8t-5V-nXW" id="Ppw-nt-cCL"/>
+                        <outlet property="inicioDatePicker" destination="Rum-MC-GjI" id="ErR-pb-fMX"/>
+                        <outlet property="nomeTextField" destination="jVg-oH-i1F" id="jgT-Gh-Vw9"/>
+                        <outlet property="terminoDatePicker" destination="Yoj-fx-cVR" id="BS4-Hz-F65"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYB-mR-8bd" userLabel="First Responder" sceneMemberID="firstResponder"/>

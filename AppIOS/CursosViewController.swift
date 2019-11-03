@@ -16,10 +16,10 @@ class CursosViewController : UITableViewController {
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        title = "Cursos"
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Novo", style: .plain, target: self, action: #selector(novo))
-        
+        carregarCursos()
+    }
+    
+    func carregarCursos() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchCursos = NSFetchRequest<NSFetchRequestResult>(entityName: "Curso")
@@ -30,11 +30,11 @@ class CursosViewController : UITableViewController {
         } catch {
             print("Failed")
         }
-        
     }
     
-    @IBAction func novo(){
-        
+    override func viewWillAppear(_ animated: Bool) {
+        carregarCursos()
+        cursosTableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
