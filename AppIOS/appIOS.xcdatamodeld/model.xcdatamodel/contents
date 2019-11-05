@@ -4,7 +4,7 @@
         <attribute name="dataNascimento" attributeType="Date" usesScalarValueType="NO">
             <userInfo/>
         </attribute>
-        <attribute name="foto" optional="YES" attributeType="Binary">
+        <attribute name="foto" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES">
             <userInfo/>
         </attribute>
         <attribute name="nome" attributeType="String">

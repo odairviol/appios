@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		157BF05F2371F8E900EC7E8A /* AlunoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157BF05E2371F8E900EC7E8A /* AlunoViewController.swift */; };
 		158B3E342357D53200E1A7E4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158B3E332357D53200E1A7E4 /* CoreData.framework */; };
 		158B3E372357D6E200E1A7E4 /* appIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E352357D6E200E1A7E4 /* appIOS.xcdatamodeld */; };
 		158B3E392357DD1200E1A7E4 /* CursosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B3E382357DD1200E1A7E4 /* CursosViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		157BF05E2371F8E900EC7E8A /* AlunoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlunoViewController.swift; sourceTree = "<group>"; };
 		158B3E332357D53200E1A7E4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		158B3E362357D6E200E1A7E4 /* model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = model.xcdatamodel; sourceTree = "<group>"; };
 		158B3E382357DD1200E1A7E4 /* CursosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CursosViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		157BF0602371F8F900EC7E8A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				15AB0CAC235A354800D80EED /* Aluno+CoreDataClass.swift */,
+				15AB0CAD235A354800D80EED /* Aluno+CoreDataProperties.swift */,
+				15AB0CAE235A354800D80EED /* Curso+CoreDataClass.swift */,
+				15AB0CAF235A354800D80EED /* Curso+CoreDataProperties.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		157BF0612371F93200EC7E8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				867F4EA9232C5366000F7C4F /* ViewController.swift */,
+				158B3E382357DD1200E1A7E4 /* CursosViewController.swift */,
+				158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */,
+				158F8E132362346D001A84E1 /* CursoViewController.swift */,
+				157BF05E2371F8E900EC7E8A /* AlunoViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		158B3E322357D53200E1A7E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,21 +113,15 @@
 		867F4EA6232C5366000F7C4F /* AppIOS */ = {
 			isa = PBXGroup;
 			children = (
-				15AB0CAC235A354800D80EED /* Aluno+CoreDataClass.swift */,
-				15AB0CAD235A354800D80EED /* Aluno+CoreDataProperties.swift */,
-				15AB0CAE235A354800D80EED /* Curso+CoreDataClass.swift */,
-				15AB0CAF235A354800D80EED /* Curso+CoreDataProperties.swift */,
+				157BF0612371F93200EC7E8A /* Views */,
+				157BF0602371F8F900EC7E8A /* Data */,
 				867F4EBB232C59E5000F7C4F /* imagens */,
 				867F4EA7232C5366000F7C4F /* AppDelegate.swift */,
-				867F4EA9232C5366000F7C4F /* ViewController.swift */,
 				867F4EAB232C5366000F7C4F /* Main.storyboard */,
 				867F4EAE232C5369000F7C4F /* Assets.xcassets */,
 				867F4EB0232C5369000F7C4F /* LaunchScreen.storyboard */,
 				867F4EB3232C5369000F7C4F /* Info.plist */,
 				158B3E352357D6E200E1A7E4 /* appIOS.xcdatamodeld */,
-				158B3E382357DD1200E1A7E4 /* CursosViewController.swift */,
-				158B3E3A2357DD2500E1A7E4 /* AlunosViewController.swift */,
-				158F8E132362346D001A84E1 /* CursoViewController.swift */,
 			);
 			path = AppIOS;
 			sourceTree = "<group>";
@@ -149,6 +168,7 @@
 				TargetAttributes = {
 					867F4EA3232C5366000F7C4F = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -194,6 +214,7 @@
 				867F4EAA232C5366000F7C4F /* ViewController.swift in Sources */,
 				158F8E142362346D001A84E1 /* CursoViewController.swift in Sources */,
 				15AB0CB1235A354800D80EED /* Aluno+CoreDataProperties.swift in Sources */,
+				157BF05F2371F8E900EC7E8A /* AlunoViewController.swift in Sources */,
 				158B3E3B2357DD2500E1A7E4 /* AlunosViewController.swift in Sources */,
 				867F4EA8232C5366000F7C4F /* AppDelegate.swift in Sources */,
 				15AB0CB2235A354800D80EED /* Curso+CoreDataClass.swift in Sources */,
@@ -353,7 +374,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ifsp.edu.AppIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -371,7 +392,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ifsp.edu.AppIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
