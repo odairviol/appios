@@ -284,13 +284,14 @@
                     <navigationItem key="navigationItem" title="Cursos" id="YDF-YD-tu1">
                         <barButtonItem key="rightBarButtonItem" title="Novo" id="E1Q-Kh-SWn">
                             <connections>
-                                <segue destination="hWt-Sb-oMb" kind="show" id="Rl3-l2-KNT"/>
+                                <segue destination="hWt-Sb-oMb" kind="show" identifier="novo" id="Rl3-l2-KNT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cursosTableView" destination="EfA-qX-6DL" id="EWh-ye-8EL"/>
+                        <segue destination="hWt-Sb-oMb" kind="show" identifier="editar" id="6RH-Ct-w2Z"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSL-bd-jmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -380,7 +381,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYB-mR-8bd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2084" y="-373"/>
+            <point key="canvasLocation" x="2311" y="-372"/>
         </scene>
     </scenes>
     <resources>
@@ -388,4 +389,7 @@
         <image name="CURSOS.png" width="201" height="201"/>
         <image name="if_logo.jpg" width="103.68000030517578" height="64.800003051757812"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6RH-Ct-w2Z"/>
+    </inferredMetricsTieBreakers>
 </document>

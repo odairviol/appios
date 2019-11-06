@@ -16,10 +16,18 @@ class CursoViewController : UIViewController {
     @IBOutlet weak var ementaTextField: UITextField!
     @IBOutlet weak var inicioDatePicker: UIDatePicker!
     @IBOutlet weak var terminoDatePicker: UIDatePicker!
+    var curso: Curso!
     
     override func viewDidLoad(){
         super.viewDidLoad()
         title = "Cadastrar Curso"
+        
+        if(curso != nil) {
+            ementaTextField.text = curso.ementa
+            terminoDatePicker.date = curso.fim as Date
+            inicioDatePicker.date = curso.inicio as Date
+            nomeTextField.text = curso.nome
+        }
     }
     
     @IBAction func salvar() {
@@ -30,13 +38,15 @@ class CursoViewController : UIViewController {
         }else {
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
             let entity = NSEntityDescription.entity(forEntityName: "Curso", in:  appDelegate.persistentContainer.viewContext)!
-            let curso = Curso(entity: entity, insertInto: appDelegate.persistentContainer.viewContext)
+            if(curso == nil){
+                curso = Curso(entity: entity, insertInto: appDelegate.persistentContainer.viewContext)
+            }
             curso.ementa = ementaTextField.text!
             curso.fim = terminoDatePicker.date as NSDate
             curso.inicio = inicioDatePicker.date as NSDate
             curso.nome = nomeTextField.text!
             appDelegate.saveContext()
-            let alert = UIAlertController(title: "Alerta", message: "Curso inserido com sucesso", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Alerta", message: "Curso salvo com sucesso", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {action in self.concluir()}))
             self.present(alert, animated: true)
         }

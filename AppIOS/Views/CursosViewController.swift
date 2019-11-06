@@ -13,6 +13,7 @@ class CursosViewController : UITableViewController {
     
     @IBOutlet var cursosTableView: UITableView!
     var cursos = [Curso]()
+    var cursoSelecionado: Curso!
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -32,9 +33,25 @@ class CursosViewController : UITableViewController {
         }
     }
     
+    func removerCurso(curso: Curso) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        do {
+            managedContext.delete(curso)
+            try managedContext.save()
+            self.carregarCursos()
+            self.cursosTableView.reloadData()
+            let alert = UIAlertController(title: "Alerta", message: "Curso removido com sucesso", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        } catch {
+            print("Failed")
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         carregarCursos()
-        cursosTableView.reloadData()
+        self.cursosTableView.reloadData()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -54,12 +71,25 @@ class CursosViewController : UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let curso = cursos[indexPath.row]
-        let alerta = UIAlertController(title: curso.nome, message: curso.ementa, preferredStyle: .alert)
-        
-        let ok = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-        
-        alerta.addAction(ok)
-        present(alerta, animated: true, completion: nil)
+        cursoSelecionado = cursos[indexPath.row]
+        self.performSegue(withIdentifier: "editar", sender: self)
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == UITableViewCell.EditingStyle.delete) {
+            let curso = cursos[indexPath.row]
+            removerCurso(curso: curso)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "editar") {
+            let cursoViewController = segue.destination as! CursoViewController
+            cursoViewController.curso = self.cursoSelecionado
+        }
     }
 }
