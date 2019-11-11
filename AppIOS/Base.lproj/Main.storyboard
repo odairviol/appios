@@ -167,6 +167,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="alunosTableView" destination="eJ5-i8-fKa" id="5nQ-u8-H23"/>
+                        <segue destination="zPk-qg-ZNM" kind="show" identifier="editar" id="XHG-Zo-NQk"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lf2-Ob-6bR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -391,5 +392,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6RH-Ct-w2Z"/>
+        <segue reference="XHG-Zo-NQk"/>
     </inferredMetricsTieBreakers>
 </document>

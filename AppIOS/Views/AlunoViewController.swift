@@ -18,6 +18,7 @@ class AlunoViewController : UIViewController, UIPickerViewDelegate, UIPickerView
     var cursos = [Curso]()
     var curso: Curso!
     var imagePicker: ImagePicker!
+    var aluno: Aluno!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,14 @@ class AlunoViewController : UIViewController, UIPickerViewDelegate, UIPickerView
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         self.cursoPicker.delegate = self
         self.cursoPicker.dataSource = self
+        
+        if(aluno != nil) {
+            nome.text = aluno.nome
+            let indice = cursos.firstIndex(of: aluno.curso) ?? 0
+            cursoPicker.selectRow(indice, inComponent: 0, animated: true)
+            dataNascimento.date = aluno.dataNascimento as Date
+            foto.image = UIImage(data: aluno.foto as Data)
+        }
     }
     
     @IBAction func salvar(_ sender: Any) {
@@ -35,13 +44,15 @@ class AlunoViewController : UIViewController, UIPickerViewDelegate, UIPickerView
         }else {
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
             let entity = NSEntityDescription.entity(forEntityName: "Aluno", in:  appDelegate.persistentContainer.viewContext)!
-            let aluno = Aluno(entity: entity, insertInto: appDelegate.persistentContainer.viewContext)
+            if(aluno == nil){
+                aluno = Aluno(entity: entity, insertInto: appDelegate.persistentContainer.viewContext)
+            }
             aluno.nome = nome.text!
             aluno.curso = cursos[cursoPicker.selectedRow(inComponent: 0)]
             aluno.dataNascimento = dataNascimento.date as NSDate
             aluno.foto = foto.image!.pngData()! as NSData
             appDelegate.saveContext()
-            let alert = UIAlertController(title: "Alerta", message: "Aluno inserido com sucesso", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Alerta", message: "Aluno salvo com sucesso", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {action in self.concluir()}))
             self.present(alert, animated: true)
         }
